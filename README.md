@@ -22,7 +22,9 @@ src/pages/posts/
 ```
 
 The directory path becomes the route, so the example above is available at
-`/posts`. The TypeScript entry point is expected to import the page's CSS:
+`/posts`.
+
+The TypeScript entry point is expected to import the page's CSS:
 
 ```ts
 import "../styles/index.css";
@@ -82,3 +84,24 @@ in the build output.
 ```sh
 npm run build
 ```
+
+## Testing
+
+The repository includes examples of both unit tests with Vitest and end-to-end
+tests with Playwright.
+
+```sh
+npm run test:unit
+npm run test:e2e
+```
+
+## Flexibility
+
+The page structure and plugin are intentionally flexible so they can be adapted
+to the existing pages we import, rather than requiring those pages to fit one
+fixed frontend setup. Each page can bring across its own scripts, styles, shared
+code, and npm dependencies.
+
+Because the build is based on Vite, it can also be adjusted to fit different
+development workflows and tools, including framework plugins, CSS processors,
+testing tools, linting, and other project-specific requirements.
