@@ -1,0 +1,17 @@
+{
+	"name": "nb-poc",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build"
+	},
+	"devDependencies": {
+		"@types/node": "^26.0.0",
+		"fast-glob": "^3.3.3",
+		"liquidjs": "^10.27.1",
+		"typescript": "~6.0.2",
+		"vite": "^8.1.0"
+	}
+}

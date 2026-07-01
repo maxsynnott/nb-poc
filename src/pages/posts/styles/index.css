@@ -1,0 +1,3 @@
+.like-button[data-liked="true"] {
+	color: red;
+}
